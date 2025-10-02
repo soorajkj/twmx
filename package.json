@@ -1,0 +1,35 @@
+{
+  "name": "twmx",
+  "version": "0.0.1",
+  "description": "A helper that merges clsx with tailwind-merge",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "repository": "https://github.com/soorajkj/twmx.git",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.11.9",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  }
+}
